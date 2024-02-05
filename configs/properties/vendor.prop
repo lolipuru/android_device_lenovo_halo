@@ -2,6 +2,9 @@
 ro.audio.monitorRotation=true
 vendor.audio.speaker_algo=true
 
+# Bluetooth
+bluetooth.device.default_name=Legion Y70
+
 # Camera
 camera.disable_zsl_mode=1
 
