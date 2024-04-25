@@ -1,0 +1,8 @@
+on property:sys.boot_completed=1
+    # Battery
+    chown system system /sys/class/qcom-battery/batt_charge_health_en
+    chmod 666 /sys/class/qcom-battery/batt_charge_health_en
+    chown system system /sys/class/qcom-battery/batt_charge_accelerate_en
+    chmod 666 /sys/class/qcom-battery/batt_charge_accelerate_en
+    chown system system /sys/class/qcom-battery/batt_charge_bypass_en
+    chmod 666 /sys/class/qcom-battery/batt_charge_bypass_en
