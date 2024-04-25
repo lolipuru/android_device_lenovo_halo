@@ -1,0 +1,2 @@
+# Touchpanel
+/sys/devices/virtual/touch/tp_dev/gesture_on                            u:object_r:sysfs_touchpanel:s0

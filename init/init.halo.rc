@@ -1,3 +1,7 @@
+on boot
+    # Gesture
+    chown system system /sys/devices/virtual/touch/tp_dev/gesture_on
+
 on property:sys.boot_completed=1
     # Battery
     chown system system /sys/class/qcom-battery/batt_charge_health_en
