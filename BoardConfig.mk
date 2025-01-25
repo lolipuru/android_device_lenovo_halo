@@ -10,6 +10,9 @@ KERNEL_PATH := $(DEVICE_PATH)-kernel
 # Inherit from sm8475-common
 include device/lenovo/sm8475-common/BoardConfigCommon.mk
 
+# Audio
+TARGET_PAL_SPKR_PROTECTION_PATH := /mnt/vendor/persist/factory/audio/audio.cal
+
 # Dtb/o
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
