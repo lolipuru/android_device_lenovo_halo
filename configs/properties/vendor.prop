@@ -1,0 +1,26 @@
+# Audio
+ro.audio.monitorRotation=true
+vendor.audio.speaker_algo=true
+
+# Camera
+camera.disable_zsl_mode=1
+
+# Display
+debug.sf.enable_hwc_vds=1
+debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
+debug.sf.set_idle_timer_ms=0
+ro.surface_flinger.display_update_imminent_timeout_ms=1000
+ro.surface_flinger.set_idle_timer_ms=1000
+vendor.display.split_layer_ext=1
+vendor.display.use_layer_ext=1
+vendor.display.vds_allow_hwc=0
+
+# RIL
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.procedure_bytes=SKIP
+persist.radio.multisim.config=dsds
