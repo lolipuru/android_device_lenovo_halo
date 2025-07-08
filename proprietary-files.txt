@@ -1,6 +1,8 @@
 # Unpinned blobs from halo (L71091_CN_SECURE_USER_Q00031.0_T_ZUI_15.0.375_ST_240403)
 
 # ACDB
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
@@ -106,7 +108,11 @@ vendor/lib/rfsa/adsp/libvpp_vqa_networks
 vendor/lib/rfsa/adsp/libvpt_action_recognition
 
 # Audio
+vendor/lib64/libadm.so
 vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libmcs.so;DISABLE_CHECKELF
+vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
+vendor/lib64/soundfx/libasphere.so
 
 # Audio (Configs)
 vendor/etc/audio/sku_cape/audio_effects.conf
