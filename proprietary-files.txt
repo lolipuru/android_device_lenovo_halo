@@ -573,6 +573,54 @@ vendor/lib64/libhdrdynamicootf.so
 vendor/etc/display/qdcm_calib_data_NOVA_NT37701A_cmd_mode_panel_with_DSC.json
 vendor/etc/display/qdcm_merge_rules_NOVA_NT37701A_cmd_mode_panel_with_DSC.json
 
+# Media (Dolby)
+vendor/bin/hw/dolbycodec2
+vendor/etc/init/vendor.dolby.vision.media.c2@1.0-service.rc
+vendor/etc/dolby_vision.cfg
+vendor/lib/c2.dolby.avc.dec.so
+vendor/lib/c2.dolby.avc.sec.dec.so
+vendor/lib/c2.dolby.client.so
+vendor/lib/c2.dolby.egl.so
+vendor/lib/c2.dolby.hevc.dec.so
+vendor/lib/c2.dolby.hevc.sec.dec.so
+vendor/lib/c2.dolby.store.so
+vendor/lib/libdolbyottcameracontrol.so
+vendor/lib/libdolbyvision.so
+vendor/lib64/c2.dolby.avc.dec.so
+vendor/lib64/c2.dolby.avc.sec.dec.so
+vendor/lib64/c2.dolby.client.so
+vendor/lib64/c2.dolby.egl.so
+vendor/lib64/c2.dolby.hevc.dec.so
+vendor/lib64/c2.dolby.hevc.sec.dec.so
+vendor/lib64/c2.dolby.store.so
+vendor/lib64/libdolbyottcameracontrol.so
+vendor/lib64/libdolbyvision.so
+
+# Media (Dolby Audio)
+vendor/bin/hw/dvs-hal-service
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
+vendor/etc/init/vendor.dolby.media.dvs-service.rc
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+vendor/etc/vintf/manifest/vendor.dolby.media.dvs-service.xml
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/libcodec2_soft_ac4dec.so
+vendor/lib64/libcodec2_soft_ddpdec.so
+vendor/lib64/libcodec2_store_dolby.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libdlbpreg.so
+vendor/lib64/vendor.dolby.dvs@1.0.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
 # EMBMS
 vendor/etc/init/init.embmssl_server.rc
 
