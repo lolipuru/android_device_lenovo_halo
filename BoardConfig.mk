@@ -31,5 +31,8 @@ PRODUCT_COPY_FILES += \
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from the proprietary version
 include vendor/lenovo/halo/BoardConfigVendor.mk
