@@ -1,3 +1,0 @@
-
-# Fingerprint
-genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup u:object_r:sysfs_wakeup:s0
