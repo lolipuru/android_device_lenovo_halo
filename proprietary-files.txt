@@ -827,6 +827,7 @@ vendor/firmware/aw86917/Stars2_RTP.bin
 vendor/firmware/aw86917/Stars2x_RTP.bin
 vendor/firmware/aw86917/TribalLangua_RTP_x.bin
 vendor/firmware/aw86917/TribalLangua_RTP.bin
+vendor/firmware/haptic_ram.bin
 
 # IFAA
 system/app/IfaaService/IfaaService.apk:vendor/app/IfaaService/IfaaService.apk
