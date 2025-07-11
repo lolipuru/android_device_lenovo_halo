@@ -64,6 +64,14 @@ blob_fixups: blob_fixups_user_type = {
             'vendor.qti.hardware.display.config-V2-ndk.so',
         ),
     (
+        'vendor/bin/hw/vendor.qti.hardware.vibrator.service',
+        'vendor/lib64/vendor.qti.hardware.vibrator.impl.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.vibrator-V2-ndk_platform.so',
+            'android.hardware.vibrator-V2-ndk.so',
+        ),
+    (
         'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
         'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
         'vendor/lib64/libgarden.so',

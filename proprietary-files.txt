@@ -1059,3 +1059,17 @@ vendor/firmware/goodix_firmware.bin
 # USB
 vendor/firmware/cy_ccg4_fw_img1.cybin
 vendor/firmware/cy_ccg4_fw_img2.cybin
+
+# Vibrator
+odm/etc/aac_richtap.config
+vendor/bin/hw/vendor.qti.hardware.vibrator.service
+vendor/bin/hw/vendor.qti.hardware.vibrator_dual@1.2-service
+vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
+vendor/etc/init/vendor.qti.hardware.vibrator_dual@1.2-service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
+vendor/lib64/hw/vibrator.default.so
+vendor/lib64/libaacvibrator.so
+vendor/lib64/libqtivibratoreffect.so
+vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
+vendor/lib64/vendor.qti.hardware.vibrator.impl.so
+vendor/lib64/vendor.qti.hardware.vibrator_dual.device@1.0.so
