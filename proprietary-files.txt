@@ -565,6 +565,12 @@ vendor/firmware/aw8680x_sram.bin
 # Chip initialized firmware
 vendor/firmware/chip_init.bin
 
+# Display (Composer)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
+
 # Display (HDR)
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
@@ -624,6 +630,52 @@ vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 # EMBMS
 vendor/etc/init/init.embmssl_server.rc
 
+# EVA firmware
+vendor/firmware/evass-lt-21.b00
+vendor/firmware/evass-lt-21.b01
+vendor/firmware/evass-lt-21.b02
+vendor/firmware/evass-lt-21.b03
+vendor/firmware/evass-lt-21.b04
+vendor/firmware/evass-lt-21.b05
+vendor/firmware/evass-lt-21.b06
+vendor/firmware/evass-lt-21.b07
+vendor/firmware/evass-lt-21.b08
+vendor/firmware/evass-lt-21.b09
+vendor/firmware/evass-lt-21.b10
+vendor/firmware/evass-lt-21.b11
+vendor/firmware/evass-lt-21.b12
+vendor/firmware/evass-lt-21.b13
+vendor/firmware/evass-lt-21.b14
+vendor/firmware/evass-lt-21.b15
+vendor/firmware/evass-lt-21.b16
+vendor/firmware/evass-lt-21.b17
+vendor/firmware/evass-lt-21.b18
+vendor/firmware/evass-lt-21.b19
+vendor/firmware/evass-lt-21.mbn
+vendor/firmware/evass-lt-21.mdt
+vendor/firmware/evass.b00
+vendor/firmware/evass.b01
+vendor/firmware/evass.b02
+vendor/firmware/evass.b03
+vendor/firmware/evass.b04
+vendor/firmware/evass.b05
+vendor/firmware/evass.b06
+vendor/firmware/evass.b07
+vendor/firmware/evass.b08
+vendor/firmware/evass.b09
+vendor/firmware/evass.b10
+vendor/firmware/evass.b11
+vendor/firmware/evass.b12
+vendor/firmware/evass.b13
+vendor/firmware/evass.b14
+vendor/firmware/evass.b15
+vendor/firmware/evass.b16
+vendor/firmware/evass.b17
+vendor/firmware/evass.b18
+vendor/firmware/evass.b19
+vendor/firmware/evass.mbn
+vendor/firmware/evass.mdt
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
@@ -635,6 +687,16 @@ vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
+# Graphics (Adreno firmware)
+vendor/firmware/a730_sqe.fw
+vendor/firmware/a730_zap.b00
+vendor/firmware/a730_zap.b01
+vendor/firmware/a730_zap.b02
+vendor/firmware/a730_zap.elf
+vendor/firmware/a730_zap.mbn
+vendor/firmware/a730_zap.mdt
+vendor/firmware/gmu_gen70000.bin
 
 # GNSS
 vendor/bin/garden_app
@@ -891,9 +953,12 @@ system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/priv-app/ims/ims.apk
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 system_ext/etc/permissions/qcrilhook.xml
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 vendor/bin/ATFWD-daemon
 vendor/bin/ccid_daemon_nr
 vendor/bin/hw/qcrilNrd
+vendor/etc/telephony_packages.xml
 vendor/etc/init/qcrilNrd.rc
 vendor/etc/qcril_database/qcrilNr.db
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql

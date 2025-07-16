@@ -104,6 +104,9 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/c2.dolby.client.so',
     ): blob_fixup()
         .add_needed('dolbycodec_shim.so'),
+    'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
+        .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so')
+        .replace_needed('vendor.qti.hardware.display.config-V5-ndk_platform.so', 'vendor.qti.hardware.display.config-V5-ndk.so'),
 }
 
 module = ExtractUtilsModule(
