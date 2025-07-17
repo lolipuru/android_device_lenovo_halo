@@ -579,6 +579,9 @@ vendor/lib64/libhdrdynamicootf.so
 vendor/etc/display/qdcm_calib_data_NOVA_NT37701A_cmd_mode_panel_with_DSC.json
 vendor/etc/display/qdcm_merge_rules_NOVA_NT37701A_cmd_mode_panel_with_DSC.json
 
+# Media
+vendor/etc/media_profiles_cape.xml
+
 # Media (Dolby)
 vendor/bin/hw/dolbycodec2
 vendor/etc/init/vendor.dolby.vision.media.c2@1.0-service.rc
