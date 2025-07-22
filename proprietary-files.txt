@@ -572,8 +572,10 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmutils.so
 
 # Display (HDR)
+vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
+vendor/lib64/libhdr_stub.so
 
 # Display
 vendor/etc/display/qdcm_calib_data_NOVA_NT37701A_cmd_mode_panel_with_DSC.json
@@ -1083,6 +1085,8 @@ vendor/etc/sensors/sns_reg_config
 # Thermal
 vendor/bin/thermal-engine-v2
 vendor/etc/init/init_thermal-engine-v2.rc
+vendor/lib64/libbitmlengine.so
+vendor/lib64/libbitmlenginev2.so
 
 # Thermal Config
 vendor/etc/scheduler_config_CPU_0.conf
@@ -1141,3 +1145,7 @@ vendor/lib64/libqtivibratoreffect.so
 vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.vibrator.impl.so
 vendor/lib64/vendor.qti.hardware.vibrator_dual.device@1.0.so
+
+# VPU Firmware
+vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v_unsigned.mbn
