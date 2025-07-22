@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
 
 # Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Sepolicy
