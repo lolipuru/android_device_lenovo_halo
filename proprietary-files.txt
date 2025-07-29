@@ -582,6 +582,7 @@ vendor/etc/display/qdcm_merge_rules_NOVA_NT37701A_cmd_mode_panel_with_DSC.json
 
 # Media
 vendor/etc/media_profiles_cape.xml
+vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 
 # Media (Dolby)
 vendor/bin/hw/dolbycodec2
