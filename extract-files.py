@@ -94,9 +94,15 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
     (
+        'vendor/bin/hw/dvs-hal-service',
         'vendor/bin/hw/dolbycodec2',
         'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service',
         'vendor/bin/hw/vendor.dolby.media.c2@1.0-service',
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libdlbpreg.so',
+        'vendor/lib64/soundfx/libdlbvol.so',
+        'vendor/lib64/soundfx/libswdap.so',
+        'vendor/lib64/soundfx/libswgamedap.so',
     ): blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
     (
