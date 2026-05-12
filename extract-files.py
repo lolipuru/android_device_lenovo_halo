@@ -70,6 +70,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'android.hardware.vibrator-V2-ndk_platform.so',
             'android.hardware.vibrator-V2-ndk.so',
+        )
+        .replace_needed(
+            'vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so',
+            'vendor.aac.hardware.richtap.vibrator-V1-ndk.so',
         ),
     (
         'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
