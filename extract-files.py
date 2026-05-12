@@ -93,23 +93,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/nfc_nci.nqx.default.hw.so',
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
-    (
-        'vendor/bin/hw/dvs-hal-service',
-        'vendor/bin/hw/dolbycodec2',
-        'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service',
-        'vendor/bin/hw/vendor.dolby.media.c2@1.0-service',
-        'vendor/lib64/libdlbdsservice.so',
-        'vendor/lib64/libdlbpreg.so',
-        'vendor/lib64/soundfx/libdlbvol.so',
-        'vendor/lib64/soundfx/libswdap.so',
-        'vendor/lib64/soundfx/libswgamedap.so',
-    ): blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
-    (
-        'vendor/lib/c2.dolby.client.so',
-        'vendor/lib64/c2.dolby.client.so',
-    ): blob_fixup()
-        .add_needed('dolbycodec_shim.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
         .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so')
         .replace_needed('vendor.qti.hardware.display.config-V5-ndk_platform.so', 'vendor.qti.hardware.display.config-V5-ndk.so'),
