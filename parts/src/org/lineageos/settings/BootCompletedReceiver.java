@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.SystemProperties;
+import android.provider.Settings;
 import android.util.Log;
 import androidx.preference.PreferenceManager;
 
@@ -37,6 +38,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     private static final String CHARGINGLIMIT_NODE = "/sys/class/qcom-battery/batt_charge_health_en";
     private static final String TURBOCHARGING_ENABLE_KEY = "turbocharging_enable";
     private static final String TURBOCHARGING_NODE = "/sys/class/qcom-battery/batt_charge_accelerate_en";
+    private static final String GESTURE_NODE = "/sys/devices/virtual/touch/tp_dev/gesture_on";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
@@ -52,5 +54,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         boolean TurboChargingEnabled = sharedPrefs.getBoolean(TURBOCHARGING_ENABLE_KEY, false);
         FileUtils.writeLine(TURBOCHARGING_NODE, TurboChargingEnabled ? "1" : "0");
+
+        int dt2wEnabled = Settings.Secure.getInt(context.getContentResolver(),
+                Settings.Secure.DOUBLE_TAP_TO_WAKE, 0);
+        FileUtils.writeLine(GESTURE_NODE, dt2wEnabled != 0 ? "1" : "0");
     }
 }
